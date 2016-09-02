@@ -59,7 +59,17 @@ def letterindex(ch):
 	else:
 		return -1
 
+def freq(text):
+	freq = {}
 
+	for char in text:
+			if char in freq:
+				freq[char] += 1
+			else:
+				freq[char] = 1
+	
+	print(freq)
+	return freq
 
 
 print("Testing Caesar")
@@ -73,3 +83,4 @@ print(letterindex('v'))
 print(vigenereE("testing", "yourmom"))
 print(vigenereD("RSMKUBS", "yourmom"))
 
+print(vigenereE):
